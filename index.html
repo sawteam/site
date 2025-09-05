@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кнопки</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .btn {
+            padding: 20px 30px;
+            text-decoration: none;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .channel-btn {
+            background: #fff;
+            color: #667eea;
+            border: 2px solid #fff;
+        }
+
+        .bot-btn {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .channel-btn:hover {
+            background: transparent;
+            color: #fff;
+        }
+
+        .bot-btn:hover {
+            background: #fff;
+            color: #667eea;
+        }
+
+        @media (max-width: 480px) {
+            .btn {
+                padding: 18px 25px;
+                font-size: 1.3rem;
+            }
+            
+            .container {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://t.me/Searchbots12" class="btn channel-btn">Канал</a>
+        <a href="https://t.me/SearchbotInfo2_bot" class="btn bot-btn">Бот</a>
+    </div>
+</body>
+</html>
