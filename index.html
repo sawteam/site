@@ -3,86 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>СЁРЧ БОТ</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 20px;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-            max-width: 400px;
-            width: 100%;
-        }
-
-        .btn {
-            padding: 20px 30px;
-            text-decoration: none;
-            border-radius: 12px;
-            text-align: center;
-            font-size: 1.5rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .channel-btn {
-            background: #fff;
-            color: #667eea;
-            border: 2px solid #fff;
-        }
-
-        .bot-btn {
-            background: transparent;
-            color: #fff;
-            border: 2px solid #fff;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .channel-btn:hover {
-            background: transparent;
-            color: #fff;
-        }
-
-        .bot-btn:hover {
-            background: #fff;
-            color: #667eea;
-        }
-
-        @media (max-width: 480px) {
-            .btn {
-                padding: 18px 25px;
-                font-size: 1.3rem;
-            }
-            
-            .container {
-                gap: 20px;
-            }
-        }
-    </style>
+    <title>SearchhbotInfo2 — OSINT-инструмент</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <a href="https://t.me/Searchbots12" class="btn channel-btn">Канал</a>
-        <a href="https://t.me/SearchhbotInfo2_bot" class="btn bot-btn">Бот</a>
-    </div>
+    <header>
+        <div class="logo">SearchhbotInfo2</div>
+        <nav>
+            <a href="#about">О боте</a>
+            <a href="#features">Функции</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Анализ данных по номеру и ФИО</h1>
+                <p>Ваш быстрый и точный OSINT-инструмент в Telegram. Найдите нужную информацию за считанные секунды.</p>
+                <a href="https://t.me/SearchhbotInfo2_bot" class="cta-button">Открыть бота</a>
+            </div>
+            <div class="hero-image-container">
+                <img src="screen.png" alt="Скриншот Telegram-бота SearchhbotInfo2">
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>О нашем проекте</h2>
+            <div class="about-content">
+                <p><strong>SearchhbotInfo2</strong> — это специализированный Telegram-бот, созданный для облегчения работы с открытыми данными. В отличие от других инструментов, наш бот фокусируется на ключевых для OSINT запросах: по номеру телефона и полному имени (ФИО). Он предоставляет быстрые и актуальные данные, помогая вам в расследованиях, проверках и поиске информации.</p>
+                <a href="https://t.me/Searchbots12" class="channel-link">Перейти в наш Telegram-канал</a>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2>Ключевые функции</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>📱 Поиск по номеру телефона</h3>
+                    <p>Введите любой номер, и бот предоставит доступную информацию, связанную с ним. Это может включать имя, мессенджеры, социальные сети и другую публичную информацию.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>👤 Поиск по ФИО</h3>
+                    <p>Используйте полное имя для поиска профилей в социальных сетях, новостных упоминаний и другой информации из открытых источников.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <h2>Оставайтесь на связи</h2>
+            <div class="contact-info">
+                <p>Все свежие обновления, новости и полезные советы публикуются в нашем канале. Присоединяйтесь, чтобы не пропустить ничего важного!</p>
+                <a href="https://t.me/Searchbots12" class="cta-button">Наш Telegram-канал</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SearchhbotInfo2. Все права защищены.</p>
+    </footer>
+
 </body>
 </html>
